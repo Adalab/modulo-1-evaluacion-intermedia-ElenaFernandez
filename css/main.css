@@ -1,2 +1,38 @@
+:root{
+    --font-family: 'Rubik', 'sans-serif';
+    --menu-color-text: #4a4a4a;
+    --main-color: #3cdbc0;
+    --main-color-text: #FFFFFF;
+}
 
-    
+.header{
+    background-color: aquamarine;
+    font-family: var(--font-family);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.list{
+    font-family: var(--font-family);
+    list-style: none;
+    display: flex;
+}
+ .blogitem{
+     text-decoration: none;
+     color: var(--menu-color-text);
+     margin-top: 10px;
+     margin-bottom: 13px;
+     margin-right: 20px;
+ }
+ .img{
+     margin-top: 10px;
+     width: 155px;
+ }
+ 
+ .contactitem{
+     text-decoration: none;
+     color: var(--menu-color-text);
+ }
