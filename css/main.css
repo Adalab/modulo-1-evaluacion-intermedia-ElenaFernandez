@@ -1,38 +1,70 @@
-:root{
-    --font-family: 'Rubik', 'sans-serif';
-    --menu-color-text: #4a4a4a;
-    --main-color: #3cdbc0;
-    --main-color-text: #FFFFFF;
+:root {
+  --font-family: "Rubik", "sans-serif";
+  --menu-color-text: #4a4a4a;
+  --main-color-background: #3cdbc0;
+  --main-color-text: #ffffff;
 }
 
-.header{
-    background-color: aquamarine;
-    font-family: var(--font-family);
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
+.header {
+  background-color: white;
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-.list{
+.list {
+  font-family: var(--font-family);
+  list-style: none;
+  display: flex;
+}
+.blogitem {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--menu-color-text);
+  margin-top: 10px;
+  margin-bottom: 13px;
+  margin-right: 20px;
+}
+.img {
+  margin-top: 10px;
+  width: 155px;
+}
+.contactitem {
+  text-decoration: none;
+  color: var(--menu-color-text);
+  font-size: 16px;
+}
+.main{
     font-family: var(--font-family);
-    list-style: none;
+    font-size: 30px;
+    color: var(--main-color-text); 
+    background-color: var(--main-color-background);
+    width: 100vw;
+    height: 100vh;
+}
+.title{
     display: flex;
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
- .blogitem{
-     text-decoration: none;
-     color: var(--menu-color-text);
-     margin-top: 10px;
-     margin-bottom: 13px;
-     margin-right: 20px;
- }
- .img{
-     margin-top: 10px;
-     width: 155px;
- }
- 
- .contactitem{
-     text-decoration: none;
-     color: var(--menu-color-text);
- }
+@media all and (min-width: 768px){
+    .header{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .img{
+        margin-left: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 155px;
+    }
+}
