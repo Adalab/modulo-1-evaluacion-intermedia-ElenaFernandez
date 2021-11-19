@@ -27,6 +27,7 @@
   color: var(--menu-color-text);
   margin-top: 10px;
   margin-right: 20px;
+  text-transform: uppercase;
 }
 .img {
   margin-top: 10px;
@@ -36,38 +37,38 @@
   text-decoration: none;
   color: var(--menu-color-text);
   font-size: 16px;
+  text-transform: uppercase;
 }
 .main {
   font-size: 30px;
   font-family: var(--font-family);
   color: var(--main-color-text);
   background-color: var(--main-color-background);
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   height: 100vh;
 }
 .title {
-  display: flex;
-  justify-content: center;
   left: 50%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-transform: capitalize;
+  font-size: 30px;
 }
 @media all and (min-width: 768px) {
   .header {
-    display: flex;
     align-items: flex-start;
     flex-direction: row;
     justify-content: space-between;
     padding: 20px 30px 20px 30px;
     box-sizing: border-box;
   }
-  .main {
+  .title {
     font-size: 40px;
   }
   .img {
-    width: 155px;
     margin-top: 0px;
   }
 
