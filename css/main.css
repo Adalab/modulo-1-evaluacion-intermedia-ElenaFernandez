@@ -16,6 +16,13 @@
   width: 100%;
   padding-bottom: 13px;
 }
+.blog{
+  padding-top: 10px;
+}
+.contact{
+  padding-top: 10px;
+  
+}
 .list {
   font-family: var(--font-family);
   list-style: none;
@@ -85,5 +92,13 @@
     display: flex;
     justify-content: center;
     transform: translateY(20px);
+  }
+
+  .contact{
+    padding-top: 0px;
+    
+  }
+  .blog{
+    padding-top: 0px;
   }
 }
